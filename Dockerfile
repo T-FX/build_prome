@@ -5,7 +5,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY prometheus                             /bin/prometheus
 COPY promtool                               /bin/promtool
-COPY documentation/examples/prometheus.yml  /etc/prometheus/prometheus.yml
+COPY prometheus.yml                         /etc/prometheus/prometheus.yml
 COPY console_libraries/                     /etc/prometheus/
 COPY consoles/                              /etc/prometheus/
 
